@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MainSiut" verbose="1" >
+    <test name="Main" >
+        <classes>
+            <class name="JiraTests">
+                <methods>
+                    <include name="IncorrectLogIn"/>
+                    <include name="CorrectLogIn"/>
+                    <include name="CreateIssue"/>
+                    <include name="LogOff"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
