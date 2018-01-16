@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 
 public class JiraTests {
-    public static WebDriver browser;
+    private static WebDriver browser;
 
     @BeforeMethod
     public static void OpenPage(){
@@ -24,20 +24,14 @@ public class JiraTests {
 
     @Test
     public static void IncorrectLogIn(){
-        browser.findElement(By.cssSelector("input[name=os_username]")).sendKeys("abobokha");
-        //Find  password input
-        browser.findElement(By.cssSelector("input[name=os_password]")).sendKeys("4159692124");
-        //Find login input
-        browser.findElement(By.cssSelector("input[name='login']")).click();
+        LogIn("abobokha","4159692124");
         String ErrorMessage = browser.findElement(By.cssSelector("input[name=login]")).getText();
         System.out.println(ErrorMessage);
     }
 
     @Test
     public static void CorrectLogIn() throws InterruptedException {
-        browser.findElement(By.cssSelector("input[name=os_username]")).sendKeys("abobokha");
-        browser.findElement(By.cssSelector("input[name=os_password]")).sendKeys("4159692125");
-        browser.findElement(By.cssSelector("input[name='login']")).click();
+        LogIn("abobokha","4159692125");
         Thread.sleep(3000);
         //Check user name
         String Name = browser.findElement(By.cssSelector("a[id='header-details-user-fullname']")).getAttribute("data-displayname");
@@ -46,9 +40,7 @@ public class JiraTests {
 
     @Test
     public static void CreateIssue() throws InterruptedException {
-        browser.findElement(By.cssSelector("input[name=os_username]")).sendKeys("abobokha");
-        browser.findElement(By.cssSelector("input[name=os_password]")).sendKeys("4159692125");
-        browser.findElement(By.cssSelector("input[name='login']")).click();
+        LogIn("abobokha","4159692125");
         browser.findElement(By.id("find_link")).click();
         Thread.sleep(1000);
         browser.findElement(By.id("filter_lnk_reported_lnk")).click();
@@ -70,14 +62,22 @@ public class JiraTests {
 
     @Test
     public static void LogOff() throws InterruptedException {
-        browser.findElement(By.cssSelector("input[name=os_username]")).sendKeys("abobokha");
-        browser.findElement(By.cssSelector("input[name=os_password]")).sendKeys("4159692125");
-        browser.findElement(By.cssSelector("input[name='login']")).click();
-        browser.findElement(By.id("header-details-user-fullname")).click();
-        browser.findElement(By.id("log_out")).click();
+        LogIn("abobokha","4159692125");
+        Thread.sleep(3000);
+        ClickMenuItem(By.id("header-details-user-fullname"),By.id("log_out"));
         Thread.sleep(3000);
         String logoff = browser.findElement(By.id("user-options")).getText();
         Assert.assertEquals(logoff,"Log In");
+    }
+    private static void ClickMenuItem(By menuSelector, By itemSelector){
+        browser.findElement(menuSelector).click();
+        browser.findElement(itemSelector).click();
+    }
+    private static void LogIn(String userName, String password){
+
+        browser.findElement(By.cssSelector("input[name=os_username]")).sendKeys(userName);
+        browser.findElement(By.cssSelector("input[name=os_password]")).sendKeys(password);
+        browser.findElement(By.cssSelector("input[name='login']")).click();
     }
     }
 
