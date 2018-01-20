@@ -19,7 +19,7 @@ public class JiraTests {
 
     @AfterMethod
     public static void CloseBrowser() {
-        browser.close();
+//        browser.close();
     }
 
     @Test
@@ -27,13 +27,14 @@ public class JiraTests {
         LogIn("abobokha","4159692124");
         String ErrorMessage = browser.findElement(By.cssSelector("input[name=login]")).getText();
         System.out.println(ErrorMessage);
+
     }
 
     @Test
     public static void CorrectLogIn() throws InterruptedException {
         LogIn("abobokha","4159692125");
         Thread.sleep(3000);
-        //Check user name
+//        Check user name
         String Name = browser.findElement(By.cssSelector("a[id='header-details-user-fullname']")).getAttribute("data-displayname");
         Assert.assertEquals(Name, "Artem Bobokha");
     }

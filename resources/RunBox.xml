@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FileDownload" verbose="1" >
+    <test name="Main" >
+        <classes>
+            <class name="BoxTest">
+                <methods>
+                    <exclude name="DownloadFile"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
