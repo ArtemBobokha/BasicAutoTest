@@ -101,72 +101,72 @@ public class HeaderPage {
     @Test
     public void checkMethods() {
         LogIn("abobokha", "4159692125");
-//        jiraLogo();
-//        dashbourd();
-//        jiraLogo();
-//        dashbourdViewSystemDashboard();
-//        dashbourdManageDashboards();
-//        projects();
-//        jiraLogo();
-//        projectsCurrentProject();
-//        projectsCurrent1Project();
-//        projectsCurrent2Project();
-//        projectsCurrent3Project();
-//        projectsSoftware();
-//        projectsBusiness();
-//        projectsViewAllProjects();
-//        issues();
-//        jiraLogo();
-//        issuesCurentSearch();
-//        issuesSearchForIssues();
-//        issuesRecentIissue1();
-//        issuesRecentIissue2();
-//        issuesRecentIissue3();
-//        issuesRecentIissue4();
-//        issuesRecentIissue5(); // not found
-//        issuesImportIssuesFromCSV();
-//        issuesFilterMyOpenIssues();
-//        issuesFilterReportedByMe();
-//        issuesManageFilters();
-//        boards();
-//        jiraLogo();
-//        boardsRecentBoard1();
-//        boardsRecentBoard2();
-//        boardsRecentBoard3();
-//        boardsRecentBoard4(); // not found
-//        boardsViewAllBoards();
-//        tests();
-//        jiraLogo();
-//        testsSearchTests();
-//        testsCreateATest();
-//        testsPlanTestCycle();
-//        testsSearchTestExecutions();
-//        testsManageExecutionFilters();
-//        testsExecuteTests();
-//        testsTestSummary();
-//        testsTestMetrics();
-//        testsTraceability();
-//        testsWelcome(); // open in new tab
-//        testsZephyrHelp(); // open in new tab
-//        testsZephyrSupport(); // open in new tab
-//        createButton(); //open dialog window
-//       helpUsButton();
-//        jiraLogo();
-//        jiraInfo();
-//        jiraLogo();
-//        jiraInfoJiraSoftwareHelp();// open in new tab
-//        jiraInfoJiraCoreHelp();// open in new tab
-//       jiraInfoKeyboardShortcuts(); //open dialog window
-//        jiraInfoAbout();
-//        jiraInfoCredits();// open Jira game
-//        userOptions();
-//        jiraLogo();
-//        userOptionsViewProfile();
-//        userOptionsAtlassianMarketplace();
-//        userOptionsSetHomeDashboard();
-//        userOptionssetHomeBoards();
-//        userOptionsSetHomeIssues();
-//        userOptionslogOut();
+        jiraLogo();
+        dashbourd();
+        jiraLogo();
+        dashbourdViewSystemDashboard();
+        dashbourdManageDashboards();
+        projects();
+        jiraLogo();
+        projectsCurrentProject();
+        projectsCurrent1Project();
+        projectsCurrent2Project();
+        projectsCurrent3Project();
+        projectsSoftware();
+        projectsBusiness();
+        projectsViewAllProjects();
+        issues();
+        jiraLogo();
+        issuesCurentSearch();
+        issuesSearchForIssues();
+        issuesRecentIissue1();
+        issuesRecentIissue2();
+        issuesRecentIissue3();
+        issuesRecentIissue4();
+        issuesRecentIissue5(); // not found
+        issuesImportIssuesFromCSV();
+        issuesFilterMyOpenIssues();
+        issuesFilterReportedByMe();
+        issuesManageFilters();
+        boards();
+        jiraLogo();
+        boardsRecentBoard1();
+        boardsRecentBoard2();
+        boardsRecentBoard3();
+        boardsRecentBoard4(); // not found
+        boardsViewAllBoards();
+        tests();
+        jiraLogo();
+        testsSearchTests();
+        testsCreateATest();
+        testsPlanTestCycle();
+        testsSearchTestExecutions();
+        testsManageExecutionFilters();
+        testsExecuteTests();
+        testsTestSummary();
+        testsTestMetrics();
+        testsTraceability();
+        testsWelcome(); // open in new tab
+        testsZephyrHelp(); // open in new tab
+        testsZephyrSupport(); // open in new tab
+        createButton(); //open dialog window
+       helpUsButton();
+        jiraLogo();
+        jiraInfo();
+        jiraLogo();
+        jiraInfoJiraSoftwareHelp();// open in new tab
+        jiraInfoJiraCoreHelp();// open in new tab
+       jiraInfoKeyboardShortcuts(); //open dialog window
+        jiraInfoAbout();
+        jiraInfoCredits();// open Jira game
+        userOptions();
+        jiraLogo();
+        userOptionsViewProfile();
+        userOptionsAtlassianMarketplace();
+        userOptionsSetHomeDashboard();
+        userOptionssetHomeBoards();
+        userOptionsSetHomeIssues();
+        userOptionslogOut();
         search("Fatal error");
 
 
