@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RunJiraTests" verbose="1" >
+    <test name="Main" >
+        <classes>
+            <class name="HeaderPage">
+                <methods>
+                    <include name="checkMethods"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
